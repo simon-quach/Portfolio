@@ -1,32 +1,21 @@
-import ProfilePicture from '../assets/pfp.jpg'
-
 const About = () => {
   return (
-    <div id='about' className='max-w-[1100px] w-full h-screen flex flex-col justify-center items-center gap-[48px]'>
-      <div className='text-[80px] font-bold text-center cursor-default'>
-        <div className=''>
-          Hello, I'm
-        </div>
-        <div className='text-[#1e72d9]'>
-          Simon Quach
-        </div>
+    <div id='about' className='px-[10%] w-full h-auto text-white pt-[100px] pb-[250px] flex flex-col justify-center bg-[#1e72d9]'>
+      <div className="text-[32px] font-bold">- About Me -</div>
+      <br />
+      <div className="text-[20px]">
+        I'm a 1st year Mathematics student at <span className="font-bold text-[#ffffff]">Orange Coast College</span>.
+        I am expected to transfer to a four year university for Fall 2023!
+        <br />
+        <br />
+        I started learning the basics of web development and Python in 2018, and recently began learning React in July of 2022.
+        I am currently seeking Software Engineering internship positions for the Summer 2023!
+        <br />
+        <br />
+        In my downtime, I like to produce music! I created my <a className="font-bold bg-[#104d98] hover:bg-[#69a0e3] rounded-sm cursor-pointer">Spotify</a>
+        and <a target='_blank' className="font-bold bg-[#104d98] hover:bg-[#69a0e3] rounded-sm cursor-pointer">Youtube</a> accounts in 2017, originally creating melodic house music, but now I switched over to producing
+        melodic dubstep.
       </div>
-      <div className='group relative rounded-[6rem]'>
-        <div className='absolute bottom-[0px] left-[0px] transition-all duration-300 ease-in-out group-hover:bottom-[-32px] group-hover:left-[24px] w-[12rem] h-[12rem] rounded-[6rem] bg-[rgb(186,211,241)]'></div>
-        <div className='absolute bottom-[0px] left-[0px] transition-all duration-300 ease-in-out group-hover:bottom-[-20px] group-hover:left-[20px] w-[12rem] h-[12rem] rounded-[6rem] bg-[rgb(146,189,243)]'></div>
-        <div className='absolute bottom-[6px] left-[-6px] transition-all duration-300 ease-in-out group-hover:bottom-[-8px] group-hover:left-[10px] w-[12rem] h-[12rem] rounded-[6rem] bg-[#1e72d9]'></div>
-
-        <div className='absolute bottom-[0px] left-[0px] transition-all duration-300 ease-in-out group-hover:bottom-[32px] group-hover:left-[-24px] w-[12rem] h-[12rem] rounded-[6rem] bg-[rgb(186,211,241)]'></div>
-        <div className='absolute bottom-[0px] left-[0px] transition-all duration-300 ease-in-out group-hover:bottom-[20px] group-hover:left-[-20px] w-[12rem] h-[12rem] rounded-[6rem] bg-[rgb(146,189,243)]'></div>
-        <div className='absolute bottom-[-6px] left-[6px] transition-all duration-300 ease-in-out group-hover:bottom-[8px] group-hover:left-[-10px] w-[12rem] h-[12rem] rounded-[6rem] bg-[#1e72d9]'></div>
-        
-        <img src={ProfilePicture} alt="profile-picture" className='w-[12rem] rounded-[6rem] relative'/>
-
-      </div>
-      <div className='text-[20px] text-[#718194]'>
-        Frontend Developer
-      </div>
-      
     </div>
   )
 }

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link } from 'react-scroll';
 
 // Configration for all React Scroll Animations
@@ -6,12 +5,12 @@ const scrollConfig = {
   spy: true,
   smooth: true,
   offset: 0,
-  duration: 500
+  duration: 700
 }
 
 const Navbar = () => {
   return (
-    <nav className='transition-all fixed top-0 h-[72px] w-full px-[40px] flex justify-center items-center'>
+    <nav className='transition-all sticky top-0 h-[72px] w-full px-[40px] flex justify-center items-center bg-white shadow-sm z-10'>
       <div className='w-full h-full flex justify-between items-center text-center'>
         <Link
           to='home'
@@ -23,7 +22,7 @@ const Navbar = () => {
           <img className='w-[56px] cursor-pointer' src="/portfolio-logo.svg" alt="img" />
         </Link>
         
-        <div className='hidden md:flex text-[16px] gap-[32px] relative'>
+        <div className='hidden md:flex items-center justify-center text-[16px] gap-[32px] relative'>
           <Link 
             to='about'
             spy={scrollConfig.spy}
@@ -64,16 +63,9 @@ const Navbar = () => {
           >
             Contact
           </Link>
-          <Link 
-            to='resume'
-            spy={scrollConfig.spy}
-            smooth={scrollConfig.smooth}
-            offset={scrollConfig.offset}
-            duration={scrollConfig.duration}
-            className='cursor-pointer'
-          >
+          <a href='/resume.pdf' target='_blank' className='cursor-pointer bg-[#1e72d9] hover:bg-[#3485e9] text-white px-4 py-2 rounded-lg'>
             Resume
-          </Link>
+          </a>
         </div>
       </div>
     </nav>
