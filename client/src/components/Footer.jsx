@@ -5,7 +5,7 @@ const Footer = () => {
   const year = date.getFullYear();
   
   return (
-    <div className='max-w-[1100px] w-full h-auto py-[2rem] mt-[4rem] flex flex-col justify-center items-center gap-2'>
+    <div className='max-w-[1100px] w-full h-auto py-[2rem] mt-[10rem] flex flex-col justify-center items-center gap-2'>
       <div className='flex lg:hidden items-center justify-center gap-6'>
             <a href='https://github.com/simon-quach' target='_blank'>
               <img src={GithubLogo} alt='github-logo' className='w-[30px] '/>

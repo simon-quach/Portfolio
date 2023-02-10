@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'Group Groove',
     subheading: 'PERSONAL PROJECT',
-    technologies: ["ReactJS", "TailwindCSS", "Express", "Node.js", "MongoDB"],
+    technologies: ["ReactJS", "TailwindCSS", "Express", "Node.js", "MongoDB", "iTunes API"],
     description: 'Group Groove strikes the perfect balance between crowd control and DJ control, resulting in a seamless and enjoyable musical experience for everyone.',
     image: GroupGroove,
     github: 'https://github.com/simon-quach/Group-Groove',
@@ -23,7 +23,7 @@ const projects = [
   {
     title: 'AI Image Generator',
     subheading: 'PERSONAL PROJECT',
-    technologies: ["ReactJS", "TailwindCSS", "Express", "Node.js", "MongoDB", "Cloudinary"],
+    technologies: ["ReactJS", "TailwindCSS", "Express", "Node.js", "MongoDB", "Cloudinary", "DALL-E AI API"],
     description: 'Using the power of DALL-E AI from OpenAI, this application allows you to create your own images using your own prompts.',
     image: AiImageGenerator,
     github: 'https://github.com/simon-quach/ai-image-generation',
@@ -32,7 +32,7 @@ const projects = [
   {
     title: 'Search That Recipe!',
     subheading: 'PERSONAL PROJECT',
-    technologies: ["ReactJS", "JavaScript", "HTML/CSS", "Bootstrap", "Firebase"],
+    technologies: ["ReactJS", "JavaScript", "HTML/CSS", "Bootstrap", "Firebase", "Edamam API"],
     description: 'This web application uses a recipe search API from Edamam to search for over 2.3 million recipes.',
     image: SearchThatRecipe,
     github: 'https://github.com/simon-quach/search-that-recipe',
