@@ -5,12 +5,12 @@
   simonquach.vercel.app
 </h1 align="center">
 <div>
-  Built with ReactJS and hosted with Vercel
+  My first portfolio website built with ReactJS and hosted with Vercel
  </div>
 
 ![portfolio-website-demo](https://user-images.githubusercontent.com/43255108/218190049-1454b17f-db49-42e7-bb71-357c7dbd9d85.png)
 
-## Set up
+## Setup
 
 1. Go into the client folder
 
