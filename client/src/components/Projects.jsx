@@ -1,6 +1,8 @@
 import { ProjectCard } from '.'
 import { AiImageGenerator, GroupGroove, SearchThatRecipe, PaddyPlantPrognosis } from "../assets/project-pictures"
+import { motion } from 'framer-motion'
 
+// Project information list
 const projects = [
   {
     title: 'Group Groove',
@@ -43,20 +45,45 @@ const projects = [
 const Projects = () => {
   return (
     <div id='projects' className='px-[10%] w-full h-auto py-[100px] flex flex-col justify-center items-center'>
-      <div className="text-[32px] font-bold">- Things I've Built -</div>
+      <motion.div 
+      className="text-[32px] font-bold"
+      initial={{ opacity: 0, y: -50 }}
+      whileInView={{ opacity: 1, y: 0, transition: {
+        type: "spring",
+        bounce: 0,
+        duration: 1.5,
+        delay: 0.3
+      } }}
+      viewport={{ once: true }}
+      >
+        - Things I've Built -
+      </motion.div>
       <br />
       <div className="flex md:flex-row flex-col justify-center items-center flex-wrap w-full gap-4">
         {projects.map((project, index) => (
-          <ProjectCard 
-            key={index} 
-            title={project.title} 
-            subheading={project.subheading} 
-            technologies={project.technologies} 
-            description={project.description}
-            image={project.image}
-            github={project.github}
-            link={project.link}
+          <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0, transition: {
+            type: "spring",
+            bounce: 0,
+            duration: 1.5,
+            delay: 0.3
+          } }}
+          viewport={{ once: true }}
+          whileHover={{ scale: 1.03 }}
+          whileTap={{ scale: 0.95 }}
+          >
+            <ProjectCard 
+              key={index} 
+              title={project.title} 
+              subheading={project.subheading} 
+              technologies={project.technologies} 
+              description={project.description}
+              image={project.image}
+              github={project.github}
+              link={project.link}
             />
+          </motion.div>
         ))}
       </div>
     </div>

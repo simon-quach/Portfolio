@@ -1,7 +1,19 @@
+import { motion } from 'framer-motion'
+
 const Skills = () => {
   return (
     <div id='skills' className='px-[10%] md:px-[15%] mt-[-150px] w-full h-auto text-center'>
-      <div className='bg-white shadow-md rounded-lg text-[20px] px-[2rem] py-[4rem] flex flex-col justify-center items-center'>
+      <motion.div 
+      className='bg-white shadow-md rounded-lg text-[20px] px-[2rem] py-[4rem] flex flex-col justify-center items-center'
+      initial={{ opacity: 0, y: -50 }}
+      whileInView={{ opacity: 1, y: 0, transition: {
+        type: "spring",
+        bounce: 0,
+        duration: 1.5,
+        delay: 0.3
+      } }}
+      viewport={{ once: true }}
+      >
         
         <div className='font-bold text-[32px] mb-[2rem]'>- Skills -</div>
         
@@ -69,7 +81,7 @@ const Skills = () => {
           </div>
 
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }
