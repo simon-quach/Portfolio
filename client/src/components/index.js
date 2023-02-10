@@ -5,6 +5,7 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
+import ProjectCard from './ProjectCard';
 
 export {
   Navbar,
@@ -13,5 +14,6 @@ export {
   Skills,
   Projects,
   Contact,
-  Footer
+  Footer,
+  ProjectCard,
 }

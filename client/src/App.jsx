@@ -1,5 +1,5 @@
+// Colors: Main = #1E72D9, Secondary = #458DE5, Black = #1b1b1b
 import { Navbar, Home, About, Skills, Projects, Contact, Footer } from './components';
-
 import { GithubLogo, LinkedInLogo, MailLogo } from './assets/logos'
 
 import './App.css'
@@ -8,8 +8,8 @@ function App() {
   return (
     <div>
       <Navbar />
-      <main className='flex flex-col items-center relative text-[#01081D] bg-[#f4f9ff]'>
-        <aside>
+      <main className='flex flex-col items-center relative text-[#1b1b1b] bg-[#f4f9ff]'>
+        <aside className='hidden lg:block'>
           <div className='flex flex-col items-center justify-center gap-4 fixed bottom-[8rem] left-[50px]'>
             <a href='https://github.com/simon-quach' target='_blank'>
               <img src={GithubLogo} alt='github-logo' className='w-[30px] '/>

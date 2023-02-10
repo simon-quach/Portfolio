@@ -6,7 +6,7 @@ const Home = () => {
       <div className='absolute w-[24px] h-[18rem] rounded-l-lg bg-[#1e72d9] bottom-[5%] right-0'></div>
       <div className='absolute w-[24px] h-[18rem] rounded-r-lg bg-[#1e72d9] top-[5%] left-0'></div> 
       
-      <div className='text-[72px] md:text-[80px] font-bold'>
+      <div className='text-[72px] md:text-[80px] font-bold text-[#1b1b1b]'>
         <div>
           Hello, I'm
         </div>

@@ -4,7 +4,7 @@ const About = () => {
       <div className="text-[32px] font-bold">- About Me -</div>
       <br />
       <div className="text-[20px]">
-        I'm a 1st year Mathematics student at <span className="font-bold text-[#ffffff]">Orange Coast College</span>.
+        I'm a 1st year Mathematics student at <span className="font-bold">Orange Coast College</span>.
         I am expected to transfer to a four year university for Fall 2023!
         <br />
         <br />

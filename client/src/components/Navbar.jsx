@@ -1,4 +1,5 @@
 import { Link } from 'react-scroll';
+import { useScrollDirection } from '../hooks';
 
 // Configration for all React Scroll Animations
 const scrollConfig = {
@@ -9,14 +10,16 @@ const scrollConfig = {
 }
 
 const Navbar = () => {
+  const scrollDirection = useScrollDirection(); // Returns a value of 'up' or 'down'
+
   return (
-    <nav className='transition-all sticky top-0 h-[72px] w-full px-[40px] flex justify-center items-center bg-white shadow-sm z-10'>
+    <nav className={`transition-all duration-500 sticky ${ scrollDirection === "down" ? "-top-72" : "top-0"} h-[72px] w-full px-[40px] flex justify-center items-center bg-white shadow-sm z-10`}>
       <div className='w-full h-full flex justify-between items-center text-center'>
         <Link
           to='home'
           spy={scrollConfig.spy}
           smooth={scrollConfig.smooth}
-          offset={scrollConfig.offset}
+          offset={-72} // -72 because of the height of the navbar
           duration={scrollConfig.duration}
         >
           <img className='w-[56px] cursor-pointer' src="/portfolio-logo.svg" alt="img" />
@@ -63,7 +66,7 @@ const Navbar = () => {
           >
             Contact
           </Link>
-          <a href='/resume.pdf' target='_blank' className='cursor-pointer bg-[#1e72d9] hover:bg-[#3485e9] text-white px-4 py-2 rounded-lg'>
+          <a href='/resume.pdf' target='_blank' className='cursor-pointer bg-[#1e72d9] hover:bg-[#458DE5] text-white px-4 py-2 rounded-lg'>
             Resume
           </a>
         </div>
