@@ -66,7 +66,7 @@ const Navbar = () => {
           >
             Contact
           </Link>
-          <a href='/resume.pdf' target='_blank' className='cursor-pointer bg-[#1e72d9] hover:bg-[#458DE5] text-white px-4 py-2 rounded-lg shadow-md'>
+          <a href='/resume.pdf' target='_blank' className='cursor-pointer bg-[#1e72d9] hover:bg-[#458DE5] text-white px-4 py-2 rounded-lg'>
             Resume
           </a>
         </div>
