@@ -1,9 +1,18 @@
 import { ProjectCard } from '.'
-import { AiImageGenerator, GroupGroove, SearchThatRecipe, PaddyPlantPrognosis } from "../assets/project-pictures"
+import { SinkOrSwim, AiImageGenerator, GroupGroove, SearchThatRecipe, PaddyPlantPrognosis } from "../assets/project-pictures"
 import { motion } from 'framer-motion'
 
 // Project information list
 const projects = [
+  {
+    title: 'Sink or Swim',
+    subheading: 'HACKATHON PROJECT',
+    technologies: ["NextJS", "TypeScript", "TailwindCSS", "Flask", "TensorFlow", "Keras", "OpenAI GPT-3 AI"],
+    description: "Web application that combines machine learning and storytelling, utilizing a custom trained recurrent neural network to predict a user's chances of survival on the Titanic based on user inputted factors.",
+    image: SinkOrSwim,
+    github: 'https://github.com/simon-quach/sink-or-swim',
+    link: 'https://sinkorswim.vercel.app/'
+  },
   {
     title: 'Group Groove',
     subheading: 'PERSONAL PROJECT',
