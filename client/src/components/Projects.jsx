@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 const projects = [
   {
     title: 'Sink or Swim',
-    subheading: 'HACKATHON PROJECT',
+    subheading: 'WINNER AT NOR CAL SPRING HACKS (2023)',
     technologies: ["NextJS", "TypeScript", "TailwindCSS", "Flask", "TensorFlow", "Keras", "OpenAI GPT-3 AI"],
     description: "Web application that combines machine learning and storytelling, utilizing a custom trained recurrent neural network to predict a user's chances of survival on the Titanic based on user inputted factors.",
     image: SinkOrSwim,
