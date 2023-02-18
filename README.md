@@ -2,7 +2,7 @@
   <img alt="Logo" src="https://github.com/simon-quach/Portfolio/blob/main/client/public/portfolio-logo.svg?raw=true" width="100" />
 </div>
 <h1 align="center">
-  simonquach.vercel.app
+  simonpquach.com
 </h1 align="center">
 <p align="center">
   My first portfolio website built with ReactJS and hosted with Vercel
