@@ -29,7 +29,7 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
       <img
         src={BackButton}
         alt="backButton"
-        className="w-6 fixed top-5 right-6"
+        className="w-6 fixed top-5 right-6 cursor-pointer"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       />
       <Link

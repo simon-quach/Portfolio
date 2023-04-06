@@ -102,7 +102,7 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen }) => {
         <img
           src={MenuIcon}
           alt="menu-icon"
-          className="w-8 sm:hidden block"
+          className="w-8 sm:hidden block cursor-pointer"
           onClick={() => {
             setIsMenuOpen(!isMenuOpen);
             console.log(isMenuOpen);
