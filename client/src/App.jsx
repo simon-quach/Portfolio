@@ -21,7 +21,7 @@ function App() {
     window.scrollTo(0, 0);
   };
 
-  const [isMenuOpen, setIsMenuOpen] = useState(true); // State for the mobile menu [true, false]
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for the mobile menu [true, false]
 
   return (
     <div className="bg-[#f4f9ff]">
