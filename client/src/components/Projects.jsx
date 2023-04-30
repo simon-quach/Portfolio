@@ -1,5 +1,5 @@
 import { ProjectCard } from '.'
-import { SinkOrSwim, AiImageGenerator, GroupGroove, SearchThatRecipe, PaddyPlantPrognosis } from "../assets/project-pictures"
+import { SinkOrSwim, AiImageGenerator, SearchThatRecipe, PaddyPlantPrognosis } from "../assets/project-pictures"
 import { motion } from 'framer-motion'
 
 // Project information list
@@ -12,15 +12,6 @@ const projects = [
     image: SinkOrSwim,
     github: 'https://github.com/simon-quach/sink-or-swim',
     link: 'https://sinkorswim.vercel.app/'
-  },
-  {
-    title: 'Group Groove',
-    subheading: 'PERSONAL PROJECT',
-    technologies: ["ReactJS", "TailwindCSS", "Express", "Node.js", "MongoDB", "iTunes API"],
-    description: 'Group Groove strikes the perfect balance between crowd control and DJ control, resulting in a seamless and enjoyable musical experience for everyone.',
-    image: GroupGroove,
-    github: 'https://github.com/simon-quach/Group-Groove',
-    link: 'https://group-groove.vercel.app/'
   },
   {
     title: 'Paddy Plant Prognosis',
