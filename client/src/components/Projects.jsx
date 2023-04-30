@@ -62,6 +62,7 @@ const Projects = () => {
       <div className="flex md:flex-row flex-col justify-center items-center flex-wrap w-full gap-4">
         {projects.map((project, index) => (
           <motion.div
+          key={index}
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0, transition: {
             type: "spring",

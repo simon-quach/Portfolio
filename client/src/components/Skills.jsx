@@ -1,6 +1,11 @@
 import { motion } from 'framer-motion'
 
 const Skills = () => {
+  const languages = ['Python', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Java', 'C++', 'C#'];
+  const frameworks = ['ReactJS', 'NextJS', 'Bootstrap', 'TailwindCSS', 'Node.js', 'Express.js'];
+  const libraries = ['Tensorflow', 'Mongoose', 'Beautiful Soup', 'OpenCV', 'NumPy', 'Matplotlib', 'Pandas', 'Selenium'];
+  const other = ['Firebase', 'Axios', 'Bash', 'Git', 'MongoDB', 'Vite', 'Vercel', 'discord.js'];
+
   return (
     <div id='skills' className='px-[10%] md:px-[15%] mt-[-150px] w-full h-auto text-center'>
       <motion.div 
@@ -24,13 +29,9 @@ const Skills = () => {
               Languages
             </div>
             <ul className='flex flex-col gap-[0.5rem]'>
-              <li>Python</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>HTML/CSS</li>
-              <li>Java</li>
-              <li>C++</li>
-              <li>C#</li>
+              {languages.map((language, index) => {
+                return <li key={index}>{language}</li>
+              })}
             </ul>
           </div>
 
@@ -39,11 +40,9 @@ const Skills = () => {
               Frameworks
             </div>
             <ul className='flex flex-col gap-[0.5rem]'>
-              <li>ReactJS</li>
-              <li>Bootstrap</li>
-              <li>TailwindCSS</li>
-              <li>Node.js</li>
-              <li>Express.js</li>
+              {frameworks.map((framework, index) => {
+                return <li key={index}>{framework}</li>
+              })}
             </ul>
           </div>
 
@@ -52,14 +51,9 @@ const Skills = () => {
               Libraries
             </div>
             <ul className='flex flex-col gap-[0.5rem]'>
-              <li>Tensorflow</li>
-              <li>Mongoose</li>
-              <li>Beautiful Soup</li>
-              <li>OpenCV</li>
-              <li>NumPy</li>
-              <li>Matplotlib</li>
-              <li>Pandas</li>
-              <li>Selenium</li>
+              {libraries.map((library, index) => {
+                return <li key={index}>{library}</li>
+              })}
             </ul>
           </div>
 
@@ -68,15 +62,9 @@ const Skills = () => {
               Other
             </div>
             <ul className='flex flex-col gap-[0.5rem]'>
-              <li>Firebase</li>
-              <li>Axios</li>
-              <li>Bash</li>
-              <li>Git</li>
-              <li>MongoDB</li>
-              <li>Vite</li>
-              <li>Vercel</li>
-              <li>discord.js</li>
-              <li>Cloudinary</li>
+              {other.map((item, index) => {
+                return <li key={index}>{item}</li>
+              })}
             </ul>
           </div>
 
